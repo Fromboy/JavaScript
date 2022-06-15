@@ -1,4 +1,11 @@
- {
+{
+  "id": "fromboy.app.sub",
+  "name": "Fromboy自用 脚本订阅",
+  "author": "@fromboy",
+  "icon": "https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png",
+  "repo": "https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Fromboy.json",
+  "apps": [
+{
       "id": "WXDDGY",
   "name": "微信滴滴果园",
   "keys": ["ddgyToken"],
