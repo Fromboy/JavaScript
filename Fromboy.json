@@ -23,7 +23,8 @@
                             "icons": ["https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png", 
    "https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png"],
                                 "script": " https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js"
-   }，{ "id": "hhsc",
+   }，{
+  "id": "hhsc",
   "name": "行行生财",
   "keys": ["hhsctk", "hhsctk2", "hhsctk3", "hhsctk4", "hhsctk5"],
   "settings": [{
