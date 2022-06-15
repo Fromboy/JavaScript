@@ -11,13 +11,13 @@
   "keys": ["ddgyToken", "ddgyToken2", "ddgyToken3", "ddgyToken4", "ddgyToken5"],
   "settings": [{
     "id": "hhscstatus",
-    "name": "当前账号数",
+    "name": "5",
     "val": "1",
     "type": "number",
     "desc": "5"
   }, {
     "id": "hhsccount",
-    "name": "当前账号总数",
+    "name": "5",
     "val": "1",
     "type": "number",
     "desc": "5"
