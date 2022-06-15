@@ -6,8 +6,8 @@
   "repo": "https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Fromboy.json",
   "apps": [
 {
-      "id": "ddgy",
-  "name": "滴滴果园",
+      "id": "wxddgy",
+  "name": "微信滴滴果园",
   "keys": ["ddgyToken","ddgyToken2","ddgyToken3","ddgyToken4", "ddgyToken5","ddgyToken6"],
   "settings": [{
     "id": "ddgystatus",
