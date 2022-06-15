@@ -8,7 +8,7 @@
 {
      "id": "ddgy",
   "name": "滴滴果园",
-  "keys": ["ddgyToken", "ddgyToken2", "ddgyToken3", "ddgyToken4", "ddgyToken5"],
+  "keys": ["ddgyToken"],
   "settings": [{
     "id": "ddgyToken",
     "name": "当前账号数",
