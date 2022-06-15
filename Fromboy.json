@@ -25,7 +25,7 @@
   "author": "@Leaf",
                         "repo": " https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js",
                             "icons": ["https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png", 
-   "https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png"],
+"https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png"],
                                 "script": " https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js"
 } , {
   "id": "hhsc",
@@ -46,7 +46,8 @@
   }],
   "author": "@danchaofan",
                         "repo": "https://github.com/danchaofan12138/danchaofan/blob/main/dd_fruit.js",
-                            "icons": ["https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png", "https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png"],
+                            "icons": ["https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png", 
+"https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png"],
                                 "script": "https://raw.githubusercontent.com/danchaofan12138/danchaofan/main/dd_fruit.js"
   } ,
  ]
