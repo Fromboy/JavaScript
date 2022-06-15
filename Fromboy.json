@@ -11,12 +11,12 @@
   "keys": ["ddgyToken"],
   "settings": [{
           "id": "ddgyToken",
-          "name": "CK 列表",
-          "val": "",
-          "type": "textarea",
+          "name": "5",
+          "val": "1",
+          "type": "number",
           "autoGrow": true,
           "rows": 5,
-          "desc": "ddgyToken"
+          "desc": "5"
   }],
   "author": "@Leaf",
                         "repo": " https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js",
