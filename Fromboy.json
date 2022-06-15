@@ -6,9 +6,9 @@
   "repo": "https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Fromboy.json",
   "apps": [
 {
-     "id": "ddgy",
+      "id": "ddgy",
   "name": "滴滴果园",
-  "keys": ["ddgyToken"],
+  "keys": ["ddgyToken","ddgyToken2","ddgyToken3","ddgyToken4", "ddgyToken5","ddgyToken6"],
   "settings": [{
     "id": "ddgyToken",
     "name": "当前账号数",
@@ -20,9 +20,9 @@
     "name": "当前账号总数",
     "val": "1",
     "type": "number",
-    "desc": "想要跑几个就填写几"
+    "desc": "想要跑几个号就填几"
   }],
-  "author": "@Leaf",
+  "author": "@danchaofan",
                         "repo": " https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js",
                             "icons": ["https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png", 
 "https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png"],
