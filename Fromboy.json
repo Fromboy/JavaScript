@@ -1,0 +1,18 @@
+ {
+      "id": "WXDDGY",
+  "name": "微信滴滴果园",
+  "keys": [" ddgyToken"],
+  "settings": [{
+          "id": " ddgyToken",
+          "name": "CK 列表",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 5,
+          "desc": "ddgyToken"
+  }],
+  "author": "@Leaf",
+                        "repo": " https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js",
+                            "icons": ["https://github.com/Fromboy/JavaScript/blob/Scripts/jeson.png", "https://github.com/Fromboy/JavaScript/blob/Scripts/jeson.png"],
+                                "script": " https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js"
+   } ,
