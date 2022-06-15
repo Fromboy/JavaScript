@@ -10,14 +10,14 @@
   "name": "微信滴滴果园",
   "keys": ["ddgyToken", "ddgyToken2", "ddgyToken3", "ddgyToken4", "ddgyToken5"],
   "settings": [{
-    "id": "hhscstatus",
-    "name": "5",
+    "id": "ddgyToken",
+    "name": "当前账号数",
     "val": "1",
     "type": "number",
     "desc": "5"
   }, {
-    "id": "hhsccount",
-    "name": "5",
+    "id": "ddgyToken",
+    "name": "当前账号总数",
     "val": "1",
     "type": "number",
     "desc": "5"
