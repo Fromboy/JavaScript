@@ -1,9 +1,9 @@
  {
       "id": "WXDDGY",
   "name": "微信滴滴果园",
-  "keys": [" ddgyToken"],
+  "keys": ["ddgyToken"],
   "settings": [{
-          "id": " ddgyToken",
+          "id": "ddgyToken",
           "name": "CK 列表",
           "val": "",
           "type": "textarea",
