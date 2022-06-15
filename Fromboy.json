@@ -14,13 +14,13 @@
     "name": "当前账号数",
     "val": "1",
     "type": "number",
-    "desc": "5"
+    "desc": "想要抓取第几个账号的数据就填几"
   }, {
     "id": "ddgyToken",
     "name": "当前账号总数",
     "val": "1",
     "type": "number",
-    "desc": "5"
+    "desc": "想要跑几个就填写几"
   }],
   "author": "@Leaf",
                         "repo": " https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js",
