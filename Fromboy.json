@@ -10,13 +10,13 @@
   "name": "滴滴果园",
   "keys": ["ddgyToken","ddgyToken2","ddgyToken3","ddgyToken4", "ddgyToken5","ddgyToken6"],
   "settings": [{
-    "id": "ddgyToken",
+    "id": "ddgystatus",
     "name": "当前账号数",
     "val": "1",
     "type": "number",
     "desc": "想要抓取第几个账号的数据就填几"
   }, {
-    "id": "ddgyToken",
+    "id": "ddgycount",
     "name": "当前账号总数",
     "val": "1",
     "type": "number",
