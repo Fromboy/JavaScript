@@ -28,17 +28,17 @@
                                 "script": " https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js"
 },
  {
-      "id": "txzxg",
+      "id": "TxStock",
   "name": "腾讯自选股",
-  "keys": ["txstockV2Cookie","txstockV2Cookie2"],
+  "keys": ["TxStockCookie","TxStockCookie2"],
   "settings": [{
-    "id": "txzxgstatus",
+    "id": "TxStockstatus",
     "name": "当前账号数",
     "val": "1",
     "type": "number",
     "desc": "想要抓取第几个账号的数据就填几"
   }, {
-    "id": "txzxgcount",
+    "id": "TxStockcount",
     "name": "当前账号总数",
     "val": "1",
     "type": "number",
