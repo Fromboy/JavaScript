@@ -54,7 +54,7 @@
   "name": "高佣联盟",
   "keys": ["useidck"],
       "settings": [{
-    "id": "gylm",
+    "id": "gyncck",
     "name": "高佣联盟",
     "val": "1",
     "type": "number",
