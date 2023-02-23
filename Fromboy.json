@@ -53,8 +53,6 @@
       "id": "gylm-ym",
   "name": "高佣联盟",
   "keys": ["gyncck"],
-  "settings": [{
-    "id": "gyncck",
   }],
                         "repo": " https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/gylm-ym.js",
                             "icons": ["https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png", 
