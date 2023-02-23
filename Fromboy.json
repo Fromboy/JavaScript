@@ -48,6 +48,28 @@
                             "icons": ["https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png", 
 "https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png"],
                                 "script": " https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/txstockV2.js"
+},
+    {
+      "id": "gylm-ym",
+  "name": "高佣联盟",
+  "keys": ["gyncck","gyncck2"],
+  "settings": [{
+    "id": "gyncck",
+    "name": "当前账号数",
+    "val": "1",
+    "type": "number",
+    "desc": "想要抓取第几个账号的数据就填几"
+  }, {
+    "id": "gyncck",
+    "name": "当前账号总数",
+    "val": "1",
+    "type": "number",
+    "desc": "想要跑几个号就填几"
+  }],
+                        "repo": " https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/gylm-ym.js",
+                            "icons": ["https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png", 
+"https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png"],
+                                "script": " https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/gylm-ym.js"
 }
  ]
 }
