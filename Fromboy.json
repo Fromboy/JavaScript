@@ -50,9 +50,9 @@
                                 "script": " https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/txstockV2.js"
 },
     {
-      "id": "gylm-ym",
+      "id": "gyncck",
   "name": "高佣联盟",
-  "keys": ["gyncck"],
+  "keys": ["useidck"],
       "settings": [{
     "id": "gylm",
     "name": "高佣联盟",
