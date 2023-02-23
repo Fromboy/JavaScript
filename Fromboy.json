@@ -52,13 +52,13 @@
     {
       "id": "gylm-ym",
   "name": "高佣联盟",
-  "keys": ["gylm-ym"],
+  "keys": ["gyncck"],
       "settings": [{
-    "id": "gyncck",
+    "id": "gylm",
     "name": "高佣联盟",
     "val": "1",
     "type": "number",
-    "desc": "想要抓取第几个账号的数据就填几"
+    "desc": "数据"
   }],
                         "repo": " https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/gylm-ym.js",
                             "icons": ["https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png", 
