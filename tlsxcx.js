@@ -15,6 +15,12 @@
 cron "30 0 7 * * *" script-path=https://raw.githubusercontent.com/Sliverkiss/helloworld/master/Study/tls.js, timeout=300, tag=特仑苏官方商城
 http-request ^https:\/\/mall\.telunsu\.net\/wxapi\/rest\/getUser\?openid=.+ script-path=https://raw.githubusercontent.com/Sliverkiss/helloworld/master/Study/tls.js, timeout=10, tag=特仑苏官方商城获取token
 *************************
+【Quantumult X】 :
+*************************
+[Script]
+cron "55 0 7 * * *" https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/tlsxcx.js, tag=特仑苏小程序, img-url=https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/Naruto/Naruto-1249.png, enabled=true
+https:\/\/mall\.telunsu\.net\/wxapi\/rest\/getUser\? url script-request-header https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/tlsxcx.js
+*************************
 
 [MITM]
 hostname = mall.telunsu.net
