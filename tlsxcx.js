@@ -1,8 +1,6 @@
 /****************************************
-@Author: Sliverkiss
-@Date: 2023-08-04 21:25:27
-@tg频道: https://github.com/Sliverkiss
-@Description: 
+@Author: 
+@Date: 2023-09-14 16:55:27
 微信小程序 特仑苏官方商城 日常签到领积分，积分可以兑换实物
 使用教程：
  1.复制Cookie脚本到本地
