@@ -4,7 +4,7 @@
 Cookie获取：高德地图.打车.福利中心，手动签到一次获取  
 签到里程可兑换打车抵用券        
 [rewrite_local]
-https://m5.amap.com/ws/alice/activity/daily_sign/do_sign url script-request-body https://raw.githubusercontent.com/Crazy-Z7/Task/main/GDTu.js
+https://m5.amap.com/ws/alice/activity/daily_sign/do_sign url script-request-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/gddtqd.js
 [task_local]
 40 9 * * * https://raw.githubusercontent.com/Crazy-Z7/Task/main/GDTu.js, tag=高德地图签到,img-url=https://raw.githubusercontent.com/Crazy-Z7/Task/main/Image/IMG_0967.jpeg,enabled=true
 [MITM]
