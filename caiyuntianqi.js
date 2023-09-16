@@ -1,11 +1,17 @@
-/**
- *[MITM]
- * hostname = biz.caiyunapp.com
- * 
+/*
+ *  * #!name=彩云天气
+ *  #!desc=解锁会员
  * Quantumult X
  * [rewrite_local]
- * ^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/hhse/Mul4hong/master/caiyun_svip.js
- *
+ * ^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/caiyuntianqi.js
+ * [MITM]
+ * hostname = biz.caiyunapp.com
+
+ * Loon
+ * [Script]
+ * caiyun = type=http-response, pattern=^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/caiyuntianqi.js
+ * [MITM]
+ * hostname = %APPEND% biz.cyapi.cn,wrapper.cyapi.cn
  * 
  * 
  */
