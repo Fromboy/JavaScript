@@ -3,7 +3,7 @@
 点击几篇文章和视频，自动获取阅读请求，添加的请求体越多，获得青豆次数越多，本脚本不包含任何推送通知
 多个请求体时用'&'号或者换行隔开" ‼️
 脚本兼容: Quantumult X, Surge, Loon, Node.js
-https://t.me/joinchat/AAAAAE7rKoq4s-WIv3OfrA
+
 
 =========Quantumult X=========
 [task_local]
