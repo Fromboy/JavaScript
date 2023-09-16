@@ -8,14 +8,14 @@ https://t.me/joinchat/AAAAAE7rKoq4s-WIv3OfrA
 =========Quantumult X=========
 [task_local]
 # 中青自动阅读
-10 1-23/3 * * * https://raw.githubusercontent.com/PoetryU/Scientist/master/Scripts/Youth/Youth_Read.js, tag=中青自动阅读, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/youth.png, enabled=true
+10 1-23/3 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/zqkd.js, tag=中青自动阅读, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/youth.png, enabled=true
 
 ==============Loon==============
 [Script]
-cron "10 1-23/3 * * *" script-path=https://raw.githubusercontent.com/PoetryU/Scientist/master/Scripts/Youth/Youth_Read.js, tag=中青自动阅读
+cron "10 1-23/3 * * *" script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/zqkd.js, tag=中青自动阅读
 
 ==============Surge=============
-中青自动阅读 = type=cron,cronexp="10 1-23/3 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/PoetryU/Scientist/master/Scripts/Youth/Youth_Read.js
+中青自动阅读 = type=cron,cronexp="10 1-23/3 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/zqkd.js
 */
 
 
