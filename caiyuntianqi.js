@@ -10,8 +10,6 @@
   #  ^https:\/\/wrapper\.cyapi\.cn\/v1\/(satellite|nafp\/origin_images) url script-request-header https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/caiyuntianqi.js
   #  [MITM]
   #  hostname = *.cyapi.cn
-  ====================================
-    */
   
   var huihui = {},
     url = $request.url;
