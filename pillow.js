@@ -3,11 +3,11 @@ hostname= api.revenuecat.com
 */
 
 var obj = {"request_date":"2020-02-15T07:09:49Z",
-  "request_date_ms":"1662599120248",
+  "request_date_ms":"1581750589992",
   "subscriber":{
     "entitlements":{
       "premium":{
-        "expires_date":"2099-02-22T07:07:58Z",
+        "expires_date":"2055-02-22T07:07:58Z",
       "product_identifier":"com.neybox.pillow.premium.year",
       "purchase_date":"2020-02-15T07:07:58Z"}
       },
@@ -21,7 +21,7 @@ var obj = {"request_date":"2020-02-15T07:09:49Z",
       "subscriptions":{
         "com.neybox.pillow.premium.year":{
           "billing_issues_detected_at":null,
-          "expires_date":"2099-02-22T07:07:58Z",
+          "expires_date":"2055-02-22T07:07:58Z",
           "is_sandbox":false,
 "original_purchase_date":"2020-02-15T07:07:58Z",
           "period_type":"trial",
