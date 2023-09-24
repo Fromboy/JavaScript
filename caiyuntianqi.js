@@ -4,8 +4,11 @@
  *  更新日期:2023-09-24 20:58:58
  *  Quantumult X
  *  [rewrite_local]
- *  ^https:\/\/biz\.cyapi\.cn\/v2\/user url script-response-body https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js
- *  ^https:\/\/wrapper\.cyapi\.cn\/v1\/(satellite|nafp\/origin_images) url script-request-header https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js * [MITM]
+ *  普通版广告
+ *  ^https:\/\/ad\.cyapi\.cn\/v2\/req\?app_name=weather url reject-dict
+ *  ^https:\/\/biz\.cyapi\.cn\/v2\/user url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/caiyuntianqi.js
+ *  ^https:\/\/wrapper\.cyapi\.cn\/v1\/(satellite|nafp\/origin_images) url script-request-header https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/caiyuntianqi.js
+ *  [MITM]
  *  hostname = *.cyapi.cn
  
   */
