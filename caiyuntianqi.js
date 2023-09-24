@@ -8,7 +8,7 @@
  #   重写
  #  ^https:\/\/biz\.cyapi\.cn\/v2\/user url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/caiyuntianqi.js
  #  ^https:\/\/wrapper\.cyapi\.cn\/v1\/(satellite|nafp\/origin_images) url script-request-header https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/caiyuntianqi.js
- *  [MITM]
+ #  [MITM]
  #  hostname = *.cyapi.cn
  
   */
