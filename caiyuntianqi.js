@@ -11,8 +11,7 @@
   #  [MITM]
   #  hostname = *.cyapi.cn
   ====================================
- 
-  */
+    */
   
   var huihui = {},
     url = $request.url;
