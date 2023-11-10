@@ -6,13 +6,19 @@
 下载地址：https://is.gd/EQEQdq
 使用声明：⚠️仅供参考，🈲️转载与售卖！
 
-**************************************
-
+*****************Quantumultx*****************
 [rewrite_local]
 ^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh url script-request-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Documents.js
 
 [mitm]
 hostname = license.pdfexpert.com
+
+*****************Shadowrocket*****************
+[Script]
+Documents = type=http-request,pattern=^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Documents.js
+
+[MITM]
+hostname= %APPEND% license.pdfexpert.com
 
 ************************************
 */
