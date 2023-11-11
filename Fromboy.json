@@ -69,7 +69,16 @@
       "id": "youzan_data",
   "name": "有赞小程序",
   "keys": ["youzan_data"],
-      "settings": [{
+      "settings": [
+        {"id": "youzan_data",
+          "name": "数据",
+          "val": "",
+          "placeholder": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2,
+          "desc": "输入CK。"
+        }
     "id": "youzan_data",
     "name": "账户数",
     "val": "1",
