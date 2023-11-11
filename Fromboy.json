@@ -78,6 +78,7 @@
           "autoGrow": true,
           "rows": 2,
           "desc": "输入CK。"
+           }, {
        "id": "youzan_data",
        "name": "账户数",
        "val": "1",
