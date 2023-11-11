@@ -78,12 +78,11 @@
           "autoGrow": true,
           "rows": 2,
           "desc": "输入CK。"
-        }
-    "id": "youzan_data",
-    "name": "账户数",
-    "val": "1",
-    "type": "number",
-    "desc": "数据"
+       "id": "youzan_data",
+       "name": "账户数",
+       "val": "1",
+      "type": "number",
+      "desc": "数据"
   }],
                         "repo": "https://gist.githubusercontent.com/Sliverkiss/585daf69a0a6c7243db8993f5394a124/raw/youzan.js",
                             "icons": ["https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png", 
