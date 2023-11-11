@@ -72,7 +72,7 @@
       "settings": [
         {"id": "youzan_data",
           "name": "账户数",
-          "val": "1",
+          "val": "",
           "placeholder": "",
           "type": "textarea",
           "autoGrow": true,
