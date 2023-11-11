@@ -79,10 +79,6 @@
           "rows": 2,
           "desc": "输入ck。"
            }, {
-       "id": "youzan_data",
-       "name": "数据",
-       "val": "",
-      "type": "输入CK。",
   }],
                         "repo": "https://gist.githubusercontent.com/Sliverkiss/585daf69a0a6c7243db8993f5394a124/raw/youzan.js",
                             "icons": ["https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png", 
