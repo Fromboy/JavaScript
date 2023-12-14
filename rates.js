@@ -11,6 +11,7 @@ $httpClient.get(url, function(error, response, data) {
   const cnyToJpy = rates.JPY.toFixed(2);
   const cnyToKrw = rates.KRW.toFixed(2);
   const eurToCny = (1 / rates.EUR).toFixed(2);
+  const cnyToTwd = rates.TWD.toFixed(2);
   const gbpToCny = (1 / rates.GBP).toFixed(2);
   const tryToCny = rates.TRY.toFixed(2);
   const timestamp = new Date().toLocaleTimeString("en-US", {
