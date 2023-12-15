@@ -1,0 +1,10 @@
+# NAME: 国家反诈中心
+# AUTHOR: 
+# REPO: 
+# UPDATED: 2023-12-14 16:52:31
+# DOMAIN-SUFFIX ：1
+# DOMAIN：1
+# > 🆕 拒绝国家反诈中心请求
+DOMAIN-SUFFIX,gjfzpt.cn,REJECT
+# > Safari 防跳转MOS无法用
+DOMAIN,app-site-association.cdn-apple.com,REJECT
