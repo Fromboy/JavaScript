@@ -17,7 +17,7 @@
 [MITM]
 hostname = %APPEND% spclient.wg.spotify.com
 [Script]
-spotify歌词翻译 = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/spotify-mac-lyric.js
+spotify歌词翻译 = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/spotify-mac-lyric.js,argument=appid=111&securityKey=xxx
 
 2.Loon:
 [Mitm]
