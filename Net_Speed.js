@@ -7,7 +7,6 @@ mb参数：每次测试消耗的流量，经测试最大可4MB参数：&mb=4，�
 iconfast、iconmid、iconslow 分别对应测速快中慢时的图标
 colorlow、colormid、colorhigh 分别对应延迟低中高时的图标颜色
 配置实例：title=花里胡哨才是生产力&iconfast=bird&iconmid=hare&iconslow=tortoise&colorlow=#06D6A0&colormid=#FFD166&colorhigh=#EF476F
-
 ⚠️不想变化多端？？
 可直接使用最基本的panel参数，title、icon、icon-color
 配置实例：titile=不想花里胡哨了&icon=hare&icon-color=#CDCDCD
