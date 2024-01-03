@@ -99,7 +99,7 @@
         "@Spotify.clientId",
         "@Spotify.clientSecret"
       ],
-      "author": "@dompling",
+      "author": "@domp",
       "descs_html": [
         "<h2>百度翻译 API</h2>",
         "<ol>注册百度翻译个人开发者: <a href=\"http://api.fanyi.baidu.com/register\">开发者注册</a></ol>",
