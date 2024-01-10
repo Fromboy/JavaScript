@@ -157,6 +157,25 @@
       "icons": [
         "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico",
         "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
+      ],
+             "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/Bdyy/bdyy.js",
+      "keys": ["UID", "TOKEN",],
+      "settings": [
+        {
+          "id": "TOKEN",
+          "name": "Token",
+          "val": "",
+          "type": "text",
+          "desc": "波点音乐Token"
+        },
+        {
+          "id": "UID",
+          "name": "UID",
+          "val": "",
+          "type": "text",
+          "desc": "波点音乐UID"
+        },
+    }
       ]
     }
   ]
