@@ -158,28 +158,38 @@
         "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico",
         "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
       ],
-      {
-        "id": "波点音乐",
-        "keys": ["UID","TOKEN"],
-        "settings":[{
-        "id": "UID",
-        "name": "波点音乐uid",
-        "val": "1",
-        "type": "number",
-        "desc": "波点音乐UID"
-      }, 
-      {
-        "id": "TOKEN",
-        "name": "token",
-        "val": "1",
-        "type": "number",
-        "desc": "波点音乐TOKEN"
- ]}
-                        "repo": " https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/Bdyy/bdyy.js",
-                            "icons": ["https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/05/b9/57/05b9577c-3773-cd2b-5a99-49c0dc3f331d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png", 
-"https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/jeson.png"],
-                                "script": " https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/Bdyy/bdyy.js"
-}
+     {
+      "id": "bdyy",
+      "name": "波点音乐",
+      "author": "@",
+      "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/Bdyy/bdyy.js",
+      "descs_html": [""],
+      "icons": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/05/b9/57/05b9577c-3773-cd2b-5a99-49c0dc3f331d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/05/b9/57/05b9577c-3773-cd2b-5a99-49c0dc3f331d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png"
+      ],
+      "keys": ["UID", "TOKEN"],
+      "settings": [
+        {
+          "id": "UID",
+          "name": "UID",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "波点音乐UID"
+        },
+        {
+          "id": "TOKEN",
+          "name": "TOKEN",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "波点音乐token"
+        }
+      ]
+    },
       ]
     }
   ]
