@@ -159,7 +159,7 @@
         "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
       ],
              "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/Bdyy/bdyy.js",
-      "keys": ["UID", "TOKEN",],
+      "keys": ["UID", "TOKEN"],
       "settings": [
         {
           "id": "TOKEN",
