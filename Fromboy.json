@@ -159,10 +159,8 @@
         "https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
       ],
       {
-        "id": "UID",
-        "name": "uid",
+        "id": "波点音乐",
         "keys": ["UID","TOKEN"],
-        "settings": [{
         "id": "UID",
         "name": "波点音乐uid",
         "val": "1",
