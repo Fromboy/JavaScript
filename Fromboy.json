@@ -160,7 +160,7 @@
       ],
      {
       "id": "bdyy",
-      "name": "波点音乐",
+      "name": "bdyy",
       "author": "@",
       "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/Bdyy/bdyy.js",
       "descs_html": [""],
@@ -177,7 +177,7 @@
           "type": "textarea",
           "autoGrow": true,
           "rows": 1,
-          "desc": "波点音乐UID"
+          "desc": "UID"
         },
         {
           "id": "TOKEN",
@@ -186,7 +186,7 @@
           "type": "textarea",
           "autoGrow": true,
           "rows": 1,
-          "desc": "波点音乐token"
+          "desc": "token"
         }
       ]
     },
