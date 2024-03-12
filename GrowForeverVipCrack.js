@@ -1,8 +1,8 @@
 /******************************************
- * @Name Grow
+ * @Name Grow 破解永久会员
  * @Description Unlock Permanent VIP
  * @1.12.1 下载地址： 
- * 从1.12.2破解后后续可以直接升级新版
+ * 从1.12.2破解后后续可以直接商店版升级新版
  * @Author Passer_by_yun
  * @Update 20240311
  * @App Link http://t.cn/A6ILzuhD
