@@ -23,8 +23,20 @@ Loon:
 3.关闭获取ck脚本，避免产生不必要的mitm。
 
 [Script]
-cron "30 9 * * *" script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/hsay.js, timeout=300, tag=沪上阿姨
-http-request ^https:\/\/webapi.qmai.cn\/web\/catering\/crm\/points-info script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/hsay.js, timeout=10, tag=沪上阿姨获取token
+cron "30 9 * * *" script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/hsay.js, timeout=300, tag=沪上阿姨
+http-request ^https:\/\/webapi.qmai.cn\/web\/catering\/crm\/points-info script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/hsay.js, timeout=10, tag=沪上阿姨获取token
+
+
+Quantumult X:
+1.将获取Cookie脚本保存到本地
+2.打开小程序->我的，若提示获取Cookie成功则可以使用该脚本
+3.关闭获取ck脚本，避免产生不必要的mitm。
+
+task_local
+30 9 * * * https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/hsay.js, tag=🥤沪上阿姨小程序签到, img-url=https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/Naruto/Naruto-1072.png, enabled=true
+rewrite_local
+^https:\/\/webapi.qmai.cn\/web\/catering\/crm\/points-info url script-response-body https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/hsay.js
+
 [MITM]
 hostname =webapi.qmai.cn
 
