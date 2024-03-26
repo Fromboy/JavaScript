@@ -35,7 +35,7 @@ Quantumult X:
 task_local
 30 9 * * * https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/hsay.js, tag=🥤沪上阿姨小程序签到, img-url=https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/Naruto/Naruto-1072.png, enabled=true
 rewrite_local
-^https:\/\/webapi.qmai.cn\/web\/catering\/crm\/points-info url script-response-body https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/hsay.js
+^https:\/\/webapi.qmai.cn\/web\/catering\/crm\/points-info url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/hsay.js
 
 [MITM]
 hostname =webapi.qmai.cn
