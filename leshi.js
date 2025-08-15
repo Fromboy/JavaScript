@@ -12,8 +12,8 @@
 *******************************
 [rewrite_local]
 # > 乐视视频
-^http:\/\/.+app.m.le.com\/android\/dynamic.php\?mod\=passport url script-response-body https://raw.githubusercontent.com/WeiGiegie/666/main/leshi.js
-^http:\/\/.+app.m.le.com\/play\?AD_IPDX url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/leshi.js
+^http:\/\/.+app.m.le.com\/android\/dynamic.php\?mod\=passport url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/leshi.js
+^http:\/\/.+app.m.le.com\/play\?AD_IPDX url script-request-header https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/leshi.js
 
 [mitm]
 hostname = 
