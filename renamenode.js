@@ -4,7 +4,7 @@
 // 把该脚本写入重写并打开解析器
 // date：2025-09-01
 [rewrite_local]
-^https?:\/\/.*\/path\/to\/nodeRename$ url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Rename%20Node.js
+^https?:\/\/.*\/path\/to\/nodeRename$ url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/renamenode.js
 
 */
 
