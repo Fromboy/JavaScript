@@ -6,7 +6,8 @@
 // ✅date：2025-09-01
 
 [rewrite_local]
-^https?:\/\/.*\/path\/to\/nodeRename$ url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/renamenode.js
+^https?:\/\/.*((sub|subscribe)|(\?.*list=)|(.*\.(txt|yaml|yml|json))).*$ url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/RenameNode.js
+
 
 */
 
