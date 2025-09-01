@@ -3,6 +3,7 @@
 // 该脚本将根据节点名称中的关键词匹配替换相应的国家名称及国旗。
 // 把该脚本写入重写并打开解析器
 // date：2025-09-01
+
 [rewrite_local]
 ^https?:\/\/.*\/path\/to\/nodeRename$ url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/renamenode.js
 
