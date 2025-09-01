@@ -33,14 +33,17 @@ const asia = {
   "印尼":"Indonesia 🇮🇩","Indonesia":"Indonesia 🇮🇩",
   "斯里兰卡":"Sri Lanka 🇱🇰","Sri Lanka":"Sri Lanka 🇱🇰",
   "尼泊尔":"Nepal 🇳🇵","Nepal":"Nepal 🇳🇵",
-  "蒙古":"Mongolia 🇲🇳","Mongolia":"Mongolia 🇲🇳"
+  "蒙古":"Mongolia 🇲🇳","Mongolia":"Mongolia 🇲🇳",
+  "科索沃":"Kosovo 🇽🇰","Kosovo":"Kosovo 🇽🇰",
+  "北塞浦路斯":"Northern Cyprus 🇳🇨","Northern Cyprus":"Northern Cyprus 🇳🇨",
+  "亚美尼亚":"Armenia 🇦🇲","Armenia":"Armenia 🇦🇲",
+  "阿塞拜疆":"Azerbaijan 🇦🇿","Azerbaijan":"Azerbaijan 🇦🇿",
+  "格鲁吉亚":"Georgia 🇬🇪","Georgia":"Georgia 🇬🇪"
 };
 
 // ====== 欧洲 ======
 const europe = {
-  "德国":"Germany 🇩🇪","Germany":"Germany 🇩🇪",
-  "法国":"France 🇫🇷","France":"France 🇫🇷",
-  "英国":"United Kingdom 🇬🇧","UK":"United Kingdom 🇬🇧","United Kingdom":"United Kingdom 🇬🇧",
+  "德国":"Germany 🇩🇪","France":"France 🇫🇷","英国":"United Kingdom 🇬🇧","UK":"United Kingdom 🇬🇧","United Kingdom":"United Kingdom 🇬🇧",
   "意大利":"Italy 🇮🇹","Italy":"Italy 🇮🇹",
   "西班牙":"Spain 🇪🇸","Spain":"Spain 🇪🇸",
   "瑞士":"Switzerland 🇨🇭","Switzerland":"Switzerland 🇨🇭",
@@ -70,7 +73,11 @@ const europe = {
   "拉脱维亚":"Latvia 🇱🇻","Latvia":"Latvia 🇱🇻",
   "爱沙尼亚":"Estonia 🇪🇪","Estonia":"Estonia 🇪🇪",
   "白俄罗斯":"Belarus 🇧🇾","Belarus":"Belarus 🇧🇾",
-  "摩尔多瓦":"Moldova 🇲🇩","Moldova":"Moldova 🇲🇩"
+  "摩尔多瓦":"Moldova 🇲🇩","Moldova":"Moldova 🇲🇩",
+  "梵蒂冈":"Vatican City 🇻🇦","Vatican":"Vatican City 🇻🇦",
+  "马耳他":"Malta 🇲🇹","Malta":"Malta 🇲🇹",
+  "列支敦士登":"Liechtenstein 🇱🇮","Liechtenstein":"Liechtenstein 🇱🇮",
+  "圣马力诺":"San Marino 🇸🇲","San Marino":"San Marino 🇸🇲"
 };
 
 // ====== 美洲 ======
@@ -85,7 +92,8 @@ const americas = {
   "秘鲁":"Peru 🇵🇪","Peru":"Peru 🇵🇪",
   "委内瑞拉":"Venezuela 🇻🇪","Venezuela":"Venezuela 🇻🇪",
   "乌拉圭":"Uruguay 🇺🇾","Uruguay":"Uruguay 🇺🇾",
-  "巴拉圭":"Paraguay 🇵🇾","Paraguay":"Paraguay 🇵🇾"
+  "巴拉圭":"Paraguay 🇵🇾","Paraguay":"Paraguay 🇵🇾",
+  "波多黎各":"Puerto Rico 🇵🇷","Puerto Rico":"Puerto Rico 🇵🇷"
 };
 
 // ====== 非洲 ======
@@ -105,7 +113,9 @@ const africa = {
 // ====== 大洋洲 ======
 const oceania = {
   "澳大利亚":"Australia 🇦🇺","Australia":"Australia 🇦🇺",
-  "新西兰":"New Zealand 🇳🇿","New Zealand":"New Zealand 🇳🇿"
+  "新西兰":"New Zealand 🇳🇿","New Zealand":"New Zealand 🇳🇿",
+  "斐济":"Fiji 🇫🇯","Fiji":"Fiji 🇫🇯",
+  "巴布亚新几内亚":"Papua New Guinea 🇵🇬","Papua New Guinea":"Papua New Guinea 🇵🇬"
 };
 
 // ====== 中东及其他地区 ======
