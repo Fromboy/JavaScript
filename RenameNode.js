@@ -3,8 +3,7 @@
 // 该脚本将根据节点名称中的关键词匹配替换相应的国家名称及国旗。
 // 把该脚本写入重写并打开解析器
 [rewrite_local]
-^https?:\/\/.*\/path\/to\/nodeRename$ url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/Scripts/Rename%20Node.js
-
+^https?:\/\/.*\/path\/to\/nodeRename$ url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/RenameNode.js
 */
 
 let body = $response.body;
