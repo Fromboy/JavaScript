@@ -11,19 +11,16 @@
 
 */
 
-if (!$response || typeof $response.body !== "string") $done({});
-
-let body = $response.body;
+// 确保响应是字符串
+let body = typeof $response.body === "string" ? $response.body : JSON.stringify($response.body);
 
 const countryFlags = {
-
-  // 亚洲 (50个)
+  // 亚洲 (Asia)
   "中国|China|CN": "中国 🇨🇳",
   "香港|Hong Kong|HK": "香港 🇭🇰",
   "台湾|Taiwan|TW": "台湾 🇹🇼",
   "日本|Japan|JP": "日本 🇯🇵",
   "韩国|South Korea|Korea|KR": "韩国 🇰🇷",
-  "新加坡|Singapore|SG": "新加坡 🇸🇬",
   "印度|India|IN": "印度 🇮🇳",
   "以色列|Israel|IL": "以色列 🇮🇱",
   "阿联酋|UAE|AE": "阿联酋 🇦🇪",
@@ -63,13 +60,9 @@ const countryFlags = {
   "黎巴嫩|Lebanon|LB": "黎巴嫩 🇱🇧",
   "阿塞拜疆|Azerbaijan|AZ": "阿塞拜疆 🇦🇿",
   "马尔代夫|Maldives|MV": "马尔代夫 🇲🇻",
-  "格鲁吉亚|Georgia|GE": "格鲁吉亚 🇬🇪",
   "叙利亚|Syria|SY": "叙利亚 🇸🇾",
-  "文莱|Brunei|BN": "文莱 🇧🇳",
-  "约旦|Jordan|JO": "约旦 🇯🇴",
-  "沙特阿拉伯|Saudi Arabia|SA": "沙特阿拉伯 🇸🇦",
 
-  // 欧洲 (50个)
+  // 欧洲 (Europe)
   "英国|United Kingdom|UK|England": "英国 🇬🇧",
   "德国|Germany|DE": "德国 🇩🇪",
   "法国|France|FR": "法国 🇫🇷",
@@ -92,26 +85,8 @@ const countryFlags = {
   "匈牙利|Hungary|HU": "匈牙利 🇭🇺",
   "白俄罗斯|Belarus|BY": "白俄罗斯 🇧🇾",
   "乌克兰|Ukraine|UA": "乌克兰 🇺🇦",
-  "罗马尼亚|Romania|RO": "罗马尼亚 🇷🇴",
-  "保加利亚|Bulgaria|BG": "保加利亚 🇧🇬",
-  "塞尔维亚|Serbia|RS": "塞尔维亚 🇷🇸",
-  "克罗地亚|Croatia|HR": "克罗地亚 🇭🇷",
-  "斯洛文尼亚|Slovenia|SI": "斯洛文尼亚 🇸🇮",
-  "斯洛伐克|Slovakia|SK": "斯洛伐克 🇸🇰",
-  "爱沙尼亚|Estonia|EE": "爱沙尼亚 🇪🇪",
-  "拉脱维亚|Latvia|LV": "拉脱维亚 🇱🇻",
-  "立陶宛|Lithuania|LT": "立陶宛 🇱🇹",
-  "冰岛|Iceland|IS": "冰岛 🇮🇸",
-  "列支敦士登|Liechtenstein|LI": "列支敦士登 🇱🇮",
-  "卢森堡|Luxembourg|LU": "卢森堡 🇱🇺",
-  "马耳他|Malta|MT": "马耳他 🇲🇹",
-  "摩纳哥|Monaco|MC": "摩纳哥 🇲🇨",
-  "安道尔|Andorra|AD": "安道尔 🇦🇩",
-  "圣马力诺|San Marino|SM": "圣马力诺 🇸🇲",
-  "梵蒂冈|Vatican|VA": "梵蒂冈 🇻🇦",
-  // …其他欧洲国家继续补全
 
-  // 美洲 (35个)
+  // 美洲 (America)
   "美国|USA|United States|US": "美国 🇺🇸",
   "加拿大|Canada|CA": "加拿大 🇨🇦",
   "墨西哥|Mexico|MX": "墨西哥 🇲🇽",
@@ -122,9 +97,8 @@ const countryFlags = {
   "秘鲁|Peru|PE": "秘鲁 🇵🇪",
   "委内瑞拉|Venezuela|VE": "委内瑞拉 🇻🇪",
   "乌拉圭|Uruguay|UY": "乌拉圭 🇺🇾",
-  // …其他美洲国家继续补全
 
-  // 非洲 & 大洋洲 (50个)
+  // 非洲 (Africa)
   "南非|South Africa|ZA": "南非 🇿🇦",
   "埃及|Egypt|EG": "埃及 🇪🇬",
   "尼日利亚|Nigeria|NG": "尼日利亚 🇳🇬",
@@ -132,13 +106,15 @@ const countryFlags = {
   "摩洛哥|Morocco|MA": "摩洛哥 🇲🇦",
   "阿尔及利亚|Algeria|DZ": "阿尔及利亚 🇩🇿",
   "突尼斯|Tunisia|TN": "突尼斯 🇹🇳",
+
+  // 大洋洲 (Oceania)
   "澳大利亚|Australia|AU": "澳大利亚 🇦🇺",
   "新西兰|New Zealand|NZ": "新西兰 🇳🇿",
   "斐济|Fiji|FJ": "斐济 🇫🇯",
-  // …其他非洲与大洋洲国家继续补全
+  "巴布亚新几内亚|Papua New Guinea|PG": "巴布亚新几内亚 🇵🇬"
 };
 
-// 批量替换
+// 遍历替换
 for (let pattern in countryFlags) {
   const regex = new RegExp(pattern, "gi");
   body = body.replace(regex, countryFlags[pattern]);
