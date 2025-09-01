@@ -8,8 +8,6 @@
 
 */
 
-
-
 let body = $response.body;
 
 // ====== 亚洲 ======
