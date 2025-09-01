@@ -1,8 +1,9 @@
 /*
-// Quantumult X 节点名称和国旗替换脚本 (支持常见国家)
-// 该脚本将根据节点名称中的关键词匹配替换相应的国家名称及国旗。
-// 把该脚本写入重写并打开解析器
-// date：2025-09-01
+// ✅Quantumult X 节点名称和国旗替换脚本 (支持常见国家)
+// ✅该脚本将根据节点名称中的关键词匹配替换相应的国家名称及国旗。
+// ✅ 它已经覆盖了 联合国193个成员国以及主要地区和部分特别行政区（香港、澳门、台湾）、中东、加勒比地区和大洋洲主要国家。
+// ✅把该脚本写入重写并打开解析器
+// ✅date：2025-09-01
 
 [rewrite_local]
 ^https?:\/\/.*\/path\/to\/nodeRename$ url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/renamenode.js
