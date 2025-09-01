@@ -11,6 +11,7 @@
 
 */
 
+// 安全获取响应内容
 let body = "";
 try {
     body = $response && $response.body ? 
@@ -20,61 +21,57 @@ try {
     body = "";
 }
 
+// ==================== 国旗字典 ====================
+// 亚洲 Asia
 const countryFlags = {
-  // 亚洲 Asia
-  "中国|China|CN": "中国 🇨🇳", "香港|Hong Kong|HK": "香港 🇭🇰", "台湾|Taiwan|TW": "台湾 🇹🇼",
-  "日本|Japan|JP": "日本 🇯🇵", "韩国|South Korea|Korea|KR": "韩国 🇰🇷", "印度|India|IN": "印度 🇮🇳",
-  "以色列|Israel|IL": "以色列 🇮🇱", "阿联酋|UAE|AE": "阿联酋 🇦🇪", "沙特|Saudi Arabia|SA": "沙特 🇸🇦",
-  "土耳其|Turkey|TR": "土耳其 🇹🇷", "卡塔尔|Qatar|QA": "卡塔尔 🇶🇦", "科威特|Kuwait|KW": "科威特 🇰🇼",
-  "巴林|Bahrain|BH": "巴林 🇧🇭", "约旦|Jordan|JO": "约旦 🇯🇴", "越南|Vietnam|VN": "越南 🇻🇳",
-  "泰国|Thailand|TH": "泰国 🇹🇭", "马来西亚|Malaysia|MY": "马来西亚 🇲🇾", "菲律宾|Philippines|PH": "菲律宾 🇵🇭",
-  "印尼|Indonesia|ID": "印尼 🇮🇩", "阿富汗|Afghanistan|AF": "阿富汗 🇦🇫", "孟加拉国|Bangladesh|BD": "孟加拉国 🇧🇩",
-  "尼泊尔|Nepal|NP": "尼泊尔 🇳🇵", "斯里兰卡|Sri Lanka|LK": "斯里兰卡 🇱🇰", "巴基斯坦|Pakistan|PK": "巴基斯坦 🇵🇰",
-  "伊拉克|Iraq|IQ": "伊拉克 🇮🇶", "伊朗|Iran|IR": "伊朗 🇮🇷", "阿曼|Oman|OM": "阿曼 🇴🇲",
-  "也门|Yemen|YE": "也门 🇾🇪", "格鲁吉亚|Georgia|GE": "格鲁吉亚 🇬🇪", "亚美尼亚|Armenia|AM": "亚美尼亚 🇦🇲",
-  "哈萨克斯坦|Kazakhstan|KZ": "哈萨克斯坦 🇰🇿", "乌兹别克斯坦|Uzbekistan|UZ": "乌兹别克斯坦 🇺🇿",
-  "吉尔吉斯斯坦|Kyrgyzstan|KG": "吉尔吉斯斯坦 🇰🇬", "塔吉克斯坦|Tajikistan|TJ": "塔吉克斯坦 🇹🇯",
-  "老挝|Laos|LA": "老挝 🇱🇦", "柬埔寨|Cambodia|KH": "柬埔寨 🇰🇭", "缅甸|Myanmar|MM": "缅甸 🇲🇲",
-  "蒙古|Mongolia|MN": "蒙古 🇲🇳", "文莱|Brunei|BN": "文莱 🇧🇳", "北朝鲜|North Korea|KP": "北朝鲜 🇰🇵",
-  "巴勒斯坦|Palestine|PS": "巴勒斯坦 🇵🇸", "黎巴嫩|Lebanon|LB": "黎巴嫩 🇱🇧", "阿塞拜疆|Azerbaijan|AZ": "阿塞拜疆 🇦🇿",
-  "马尔代夫|Maldives|MV": "马尔代夫 🇲🇻", "叙利亚|Syria|SY": "叙利亚 🇸🇾",
-
-  // 欧洲 Europe
-  "英国|United Kingdom|UK|England": "英国 🇬🇧", "德国|Germany|DE": "德国 🇩🇪", "法国|France|FR": "法国 🇫🇷",
-  "俄罗斯|Russia|RU": "俄罗斯 🇷🇺", "荷兰|Netherlands|NL": "荷兰 🇳🇱", "瑞士|Switzerland|CH": "瑞士 🇨🇭",
-  "瑞典|Sweden|SE": "瑞典 🇸🇪", "挪威|Norway|NO": "挪威 🇳🇴", "丹麦|Denmark|DK": "丹麦 🇩🇰",
-  "芬兰|Finland|FI": "芬兰 🇫🇮", "比利时|Belgium|BE": "比利时 🇧🇪", "奥地利|Austria|AT": "奥地利 🇦🇹",
-  "爱尔兰|Ireland|IE": "爱尔兰 🇮🇪", "葡萄牙|Portugal|PT": "葡萄牙 🇵🇹", "希腊|Greece|GR": "希腊 🇬🇷",
-  "西班牙|Spain|ES": "西班牙 🇪🇸", "意大利|Italy|IT": "意大利 🇮🇹", "波兰|Poland|PL": "波兰 🇵🇱",
-  "捷克|Czech|CZ": "捷克 🇨🇿", "匈牙利|Hungary|HU": "匈牙利 🇭🇺", "白俄罗斯|Belarus|BY": "白俄罗斯 🇧🇾",
-  "乌克兰|Ukraine|UA": "乌克兰 🇺🇦", "罗马尼亚|Romania|RO": "罗马尼亚 🇷🇴", "保加利亚|Bulgaria|BG": "保加利亚 🇧🇬",
-  "塞尔维亚|Serbia|RS": "塞尔维亚 🇷🇸", "克罗地亚|Croatia|HR": "克罗地亚 🇭🇷", "斯洛文尼亚|Slovenia|SI": "斯洛文尼亚 🇸🇮",
-  "斯洛伐克|Slovakia|SK": "斯洛伐克 🇸🇰", "爱沙尼亚|Estonia|EE": "爱沙尼亚 🇪🇪", "拉脱维亚|Latvia|LV": "拉脱维亚 🇱🇻",
-  "立陶宛|Lithuania|LT": "立陶宛 🇱🇹", "冰岛|Iceland|IS": "冰岛 🇮🇸", "列支敦士登|Liechtenstein|LI": "列支敦士登 🇱🇮",
-  "卢森堡|Luxembourg|LU": "卢森堡 🇱🇺", "马耳他|Malta|MT": "马耳他 🇲🇹", "摩纳哥|Monaco|MC": "摩纳哥 🇲🇨",
-  "安道尔|Andorra|AD": "安道尔 🇦🇩", "圣马力诺|San Marino|SM": "圣马力诺 🇸🇲", "梵蒂冈|Vatican|VA": "梵蒂冈 🇻🇦",
-
-  // 美洲 America
-  "美国|USA|United States|US": "美国 🇺🇸", "加拿大|Canada|CA": "加拿大 🇨🇦", "墨西哥|Mexico|MX": "墨西哥 🇲🇽",
-  "巴西|Brazil|BR": "巴西 🇧🇷", "阿根廷|Argentina|AR": "阿根廷 🇦🇷", "智利|Chile|CL": "智利 🇨🇱",
-  "哥伦比亚|Colombia|CO": "哥伦比亚 🇨🇴", "秘鲁|Peru|PE": "秘鲁 🇵🇪", "委内瑞拉|Venezuela|VE": "委内瑞拉 🇻🇪",
-  "乌拉圭|Uruguay|UY": "乌拉圭 🇺🇾", "巴拿马|Panama|PA": "巴拿马 🇵🇦", "牙买加|Jamaica|JM": "牙买加 🇯🇲",
-  "古巴|Cuba|CU": "古巴 🇨🇺",
-
-  // 非洲 Africa
-  "南非|South Africa|ZA": "南非 🇿🇦", "埃及|Egypt|EG": "埃及 🇪🇬", "尼日利亚|Nigeria|NG": "尼日利亚 🇳🇬",
-  "肯尼亚|Kenya|KE": "肯尼亚 🇰🇪", "摩洛哥|Morocco|MA": "摩洛哥 🇲🇦", "阿尔及利亚|Algeria|DZ": "阿尔及利亚 🇩🇿",
-  "突尼斯|Tunisia|TN": "突尼斯 🇹🇳", "安哥拉|Angola|AO": "安哥拉 🇦🇴", "埃塞俄比亚|Ethiopia|ET": "埃塞俄比亚 🇪🇹",
-
-  // 大洋洲 Oceania
-  "澳大利亚|Australia|AU": "澳大利亚 🇦🇺", "新西兰|New Zealand|NZ": "新西兰 🇳🇿", "斐济|Fiji|FJ": "斐济 🇫🇯",
-  "巴布亚新几内亚|Papua New Guinea|PG": "巴布亚新几内亚 🇵🇬", "所罗门群岛|Solomon Islands|SB": "所罗门群岛 🇸🇧"
+    "中国|China|CN": "中国 🇨🇳", "香港|Hong Kong|HK": "香港 🇭🇰", "台湾|Taiwan|TW": "台湾 🇹🇼",
+    "日本|Japan|JP": "日本 🇯🇵", "韩国|South Korea|Korea|KR": "韩国 🇰🇷", "印度|India|IN": "印度 🇮🇳",
+    "以色列|Israel|IL": "以色列 🇮🇱", "阿联酋|UAE|AE": "阿联酋 🇦🇪", "沙特|Saudi Arabia|SA": "沙特 🇸🇦",
+    "土耳其|Turkey|TR": "土耳其 🇹🇷", "越南|Vietnam|VN": "越南 🇻🇳", "泰国|Thailand|TH": "泰国 🇹🇭",
+    "马来西亚|Malaysia|MY": "马来西亚 🇲🇾", "菲律宾|Philippines|PH": "菲律宾 🇵🇭", "印尼|Indonesia|ID": "印尼 🇮🇩",
+    "巴基斯坦|Pakistan|PK": "巴基斯坦 🇵🇰", "孟加拉|Bangladesh|BD": "孟加拉 🇧🇩", "斯里兰卡|Sri Lanka|LK": "斯里兰卡 🇱🇰",
+    "阿富汗|Afghanistan|AF": "阿富汗 🇦🇫", "伊朗|Iran|IR": "伊朗 🇮🇷"
+    // 可继续补充其他亚洲国家
 };
 
-// 遍历替换
+// 欧洲 Europe
+Object.assign(countryFlags, {
+    "英国|United Kingdom|UK|England": "英国 🇬🇧", "德国|Germany|DE": "德国 🇩🇪", "法国|France|FR": "法国 🇫🇷",
+    "俄罗斯|Russia|RU": "俄罗斯 🇷🇺", "荷兰|Netherlands|NL": "荷兰 🇳🇱", "瑞士|Switzerland|CH": "瑞士 🇨🇭",
+    "瑞典|Sweden|SE": "瑞典 🇸🇪", "挪威|Norway|NO": "挪威 🇳🇴", "丹麦|Denmark|DK": "丹麦 🇩🇰",
+    "芬兰|Finland|FI": "芬兰 🇫🇮", "意大利|Italy|IT": "意大利 🇮🇹"
+});
+
+// 美洲 America
+Object.assign(countryFlags, {
+    "美国|USA|United States|US": "美国 🇺🇸", "加拿大|Canada|CA": "加拿大 🇨🇦", "墨西哥|Mexico|MX": "墨西哥 🇲🇽",
+    "巴西|Brazil|BR": "巴西 🇧🇷", "阿根廷|Argentina|AR": "阿根廷 🇦🇷"
+});
+
+// 非洲 Africa
+Object.assign(countryFlags, {
+    "南非|South Africa|ZA": "南非 🇿🇦", "埃及|Egypt|EG": "埃及 🇪🇬", "尼日利亚|Nigeria|NG": "尼日利亚 🇳🇬",
+    "肯尼亚|Kenya|KE": "肯尼亚 🇰🇪"
+});
+
+// 大洋洲 Oceania
+Object.assign(countryFlags, {
+    "澳大利亚|Australia|AU": "澳大利亚 🇦🇺", "新西兰|New Zealand|NZ": "新西兰 🇳🇿"
+});
+
+// ==================== 替换逻辑 ====================
+let replaced = false;
 for (let pattern in countryFlags) {
     const regex = new RegExp(pattern, "gi");
-    body = body.replace(regex, countryFlags[pattern]);
+    if (regex.test(body)) {
+        body = body.replace(regex, countryFlags[pattern]);
+        replaced = true;
+    }
+}
+
+// 如果没有匹配到任何国家，给默认国旗 🌐
+if (!replaced) {
+    body = body.replace(/(节点|Node|server|host)/gi, "🌐 $1");
 }
 
 $done({body});
