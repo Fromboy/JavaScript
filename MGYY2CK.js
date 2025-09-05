@@ -9,7 +9,7 @@
 [rewrite_local]
 # > 咪咕音乐vip、音质
 ^https?:\/\/(u|c|app).(musicapp|(c|u).nf).migu.cn.+(user\/api|column\/startup|resource\/skin) url script-response-body https://raw.githubusercontent.com/WeiGiegie/666/main/MGYY2.js
-^https?:\/\/app.(c|pd).nf.migu.cn\/.*\/(listen-url|music\/batchQueryMusicPolicy|download-url).*$ url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/MGYY2CK.js
+^https?:\/\/app.(c|pd).nf.migu.cn\/.*\/(listen-url|music\/batchQueryMusicPolicy|download-url).*$ url script-request-header https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/MGYY2CK.js
 # > 去广告
 ^https://app\.c\.nf\.migu\.cn/strategy/listen-url/v2.5 url 302 https://app.c.nf.migu.cn/strategy/listen-url/v2.4
 ^https://app\.c\.nf\.migu\.cn/member/api/marketing/text url reject
