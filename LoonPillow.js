@@ -1,34 +1,31 @@
 /*
-脚本功能：Pillow 解锁订阅
-适用工具：Loon、Surge、QuantumultX、Egern
+Pillow RevenueCat 解锁脚本
 */
 
-var obj = {
-  request_date: "2020-02-15T07:09:49Z",
-  request_date_ms: "1581750589992",
+let obj = {
+  request_date: "2025-09-05T12:00:00Z",
+  request_date_ms: 1757073600000,
   subscriber: {
     entitlements: {
       premium: {
-        expires_date: "2055-02-22T07:07:58Z",
         product_identifier: "com.neybox.pillow.premium.year",
-        purchase_date: "2020-02-15T07:07:58Z"
+        purchase_date: "2023-01-01T00:00:00Z",
+        expires_date: "2099-01-01T00:00:00Z"
       }
     },
-    first_seen: "2020-02-14T20:28:01Z",
-    last_seen: "2020-02-14T20:28:01Z",
-    non_subscriptions: {},
-    original_app_user_id: "D1D6D98B-EF51-48AF-9876-7352ABCEFD60",
+    first_seen: "2023-01-01T00:00:00Z",
+    last_seen: "2025-09-05T12:00:00Z",
+    original_app_user_id: "00000000-0000-0000-0000-000000000000",
     original_application_version: "216",
-    original_purchase_date: "2020-02-14T20:26:59Z",
-    other_purchases: {},
+    original_purchase_date: "2023-01-01T00:00:00Z",
     subscriptions: {
       "com.neybox.pillow.premium.year": {
         billing_issues_detected_at: null,
-        expires_date: "2055-02-22T07:07:58Z",
+        expires_date: "2099-01-01T00:00:00Z",
         is_sandbox: false,
-        original_purchase_date: "2020-02-15T07:07:58Z",
-        period_type: "trial",
-        purchase_date: "2020-02-15T07:07:58Z",
+        original_purchase_date: "2023-01-01T00:00:00Z",
+        period_type: "active",
+        purchase_date: "2023-01-01T00:00:00Z",
         store: "app_store",
         unsubscribe_detected_at: null
       }
