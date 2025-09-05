@@ -6,6 +6,7 @@
 下载地址：
 脚本作者：
 更新时间：2025年
+# quantumult X
 [rewrite_local]
 # > 咪咕音乐vip、音质
 ^https?:\/\/(u|c|app).(musicapp|(c|u).nf).migu.cn.+(user\/api|column\/startup|resource\/skin) url script-response-body https://raw.githubusercontent.com/WeiGiegie/666/main/MGYY2.js
@@ -14,6 +15,27 @@
 ^https://app\.c\.nf\.migu\.cn/strategy/listen-url/v2.5 url 302 https://app.c.nf.migu.cn/strategy/listen-url/v2.4
 ^https://app\.c\.nf\.migu\.cn/member/api/marketing/text url reject
 ^https://app\.c.nf\.migu\.cn/payment/watch-ad url reject-200
+
+Loon
+#!name=咪咕音乐VIP去广告
+#!desc= 解锁咪咕音乐VIP功能 + 去广告
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Music.png
+
+[Rewrite]
+# 去广告
+^https://app\.c\.nf\.migu\.cn/strategy/listen-url/v2.5 url 302 https://app.c.nf.migu.cn/strategy/listen-url/v2.4
+^https://app\.c\.nf\.migu\.cn/member/api/marketing/text url reject
+^https://app\.c\.nf\.migu\.cn/payment/watch-ad url reject-200
+
+[Script]
+# VIP、音质解锁（响应体）
+http-response ^https?:\/\/(u|c|app).(musicapp|(c|u).nf).migu.cn.+(user\/api|column\/startup|resource\/skin) script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/MGYY2.js, requires-body=true, tag=咪咕VIP解锁
+
+# 音乐接口解锁（请求头）
+http-request ^https?:\/\/app.(c|pd).nf.migu.cn\/.*\/(listen-url|music\/batchQueryMusicPolicy|download-url).*$ script-path=https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/MGYY2CK.js, tag=咪咕音源请求头
+
+
+
 [mitm] 
 hostname = *.migu.cn
 *
