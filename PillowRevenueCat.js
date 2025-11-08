@@ -1,4 +1,4 @@
-/*https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body pillow.js
+/*https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/PillowRevenueCat.js
 hostname= api.revenuecat.com
 */
 
