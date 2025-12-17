@@ -9,7 +9,7 @@
 
 [rewrite_local]
   
-# > Nicegram☆解锁会员权限（2024-02-24）@ddgksf2013
+# > Nicegram☆解锁会员权限（2024-02-24）
 ^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth) url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/NicegramProCrack.js
 
 [mitm] 
