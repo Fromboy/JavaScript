@@ -2,16 +2,16 @@
 原作者 @mcdasheng688 @General74110
 # 登陆：https://360.com/kuwo获取
 
-#酷我音乐
+#酷我音乐积分兑换会员
 Qx用户直接这样
 
-https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/kuwotask.js?phone=18812344321
+https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/kuwotask.js?phone=18812344321
 类型别选错 script-echo-response 
 
 然后打开登录控制台获取ck添加定时任务即可
 
 [rewrite_local]
-^https?:\/\/360\.com\/kuwo url script-echo-response https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/kuwotask.js?phone=1234567890
+^https?:\/\/360\.com\/kuwo url script-echo-response https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/kuwotask.js?phone=1234567890
 
 [mitm]
 hostname = 360.com
