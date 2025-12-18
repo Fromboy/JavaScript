@@ -2,6 +2,9 @@
 原作者 @mcdasheng688 @General74110
 # 登陆：https://360.com/kuwo获取
 
+Loon https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/KuWoTask.lpx
+surge https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/KuWoTask.sgmodulle
+
 #酷我音乐积分兑换会员
 Qx用户直接这样
 
