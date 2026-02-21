@@ -1,6 +1,18 @@
-/*https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/PillowRevenueCat.js
+/********************************
+脚本功能：Pillow： 睡眠周期跟踪器+解锁订阅
+下载地址：https://is.gd/X3FiFg
+软件版本：4.9
+更新时间：2026-9-26
+使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
+
+*******************************
+[rewrite_local]
+
+^https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/PillowRevenueCat.js
+[mitm] 
 hostname= api.revenuecat.com
-*/
+
+********************************/
 
 var obj = {"request_date":"2020-02-15T07:09:49Z",
   "request_date_ms":"1581750589992",
