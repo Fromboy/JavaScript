@@ -2,6 +2,15 @@
  * @description RevenueCat 万能全自动订阅脚本
  * @author Gemini
  * @update 2026-02-21
+
+ *******************************
+[rewrite_local]
+
+^https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/PillowRevenueCat.js
+[mitm] 
+hostname= api.revenuecat.com
+
+********************************/
  */
 
 if ($response.body) {
