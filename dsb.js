@@ -12,7 +12,7 @@
 *******************************
 [rewrite_local]
 # > 读手表-insight
-^https:\/\/watch\.taotiangou\.cn\/prod-api\/watch\/insight\/userInfo\/getUserMemberInfo url script-response-body https://raw.githubusercontent.com/WeiGiegie/666/main/dsb.js
+^https:\/\/watch\.taotiangou\.cn\/prod-api\/watch\/insight\/userInfo\/getUserMemberInfo url script-response-body https://raw.githubusercontent.com/Fromboy/JavaScript/refs/heads/Scripts/dsb.js
 
 [mitm]
 hostname = watch.taotiangou.cn
